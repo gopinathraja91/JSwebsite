@@ -25,3 +25,17 @@ footer.footersec.row {
     padding-bottom: 8px;
     border-radius: 8px;
 }
+
+.modal-dialog {
+    max-width: 80%;
+}
+
+.my-flex-item{
+
+    width:250px;
+}
+
+.card.my-flex-item{
+
+    flex: 1 1 auto;
+}
