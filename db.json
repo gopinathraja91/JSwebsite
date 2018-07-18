@@ -40,6 +40,50 @@
       "adult": "false",
       "overview": "King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
       "release_date": "2018-02-13"
+    },
+    {
+      "vote_count": "5663",
+      "id": "299536",
+      "video": "false",
+      "vote_average": "8.4",
+      "title": "Avengers: Infinity War",
+      "popularity": "122.253",
+      "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+      "original_language": "en",
+      "original_title": "Avengers: Infinity War",
+      "genre_ids[]": [
+        "12",
+        "878",
+        "14",
+        "28"
+      ],
+      "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
+      "adult": "false",
+      "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+      "release_date": "2018-04-25"
+    },
+    {
+      "vote_count": "2139",
+      "id": "338970",
+      "video": "false",
+      "vote_average": "6.2",
+      "title": "Tomb Raider",
+      "popularity": "57.365",
+      "poster_path": "/3zrC5tUiR35rTz9stuIxnU1nUS5.jpg",
+      "original_language": "en",
+      "original_title": "Tomb Raider",
+      "genre_ids[]": [
+        "28",
+        "12",
+        "14",
+        "18",
+        "9648",
+        "53"
+      ],
+      "backdrop_path": "/jLYhKjSC8LyXzWZc6VwPjMYP2wy.jpg",
+      "adult": "false",
+      "overview": "Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she finds herself on the island where her father disappeared.",
+      "release_date": "2018-03-05"
     }
   ]
 }
