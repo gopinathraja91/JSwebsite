@@ -18,8 +18,8 @@ function ajaxcall(ApiUrl,Apikey,DataType){
 
 
 function AjaxPost(URL,data){
-   
-    for(let i=0;i<data.length;i++){
+    
+    for( let i=0;i<data.length;i++){
         $.post(_var.BaseServerUrl,
         data[i],
         function(data, status){
@@ -32,13 +32,13 @@ function AjaxPost(URL,data){
 
 function AjaxDelete(URL,data){
 
-    for(let i=0;i<data.length;i++){
+    for( let i=0;i<data.length;i++){
         console.log(data[i].id);
             $.ajax({
-            url: _var.BaseServerUrl+data[i].id,
+            url: _var.BaseServerUrl+"/"+data[i].id,
             type: 'DELETE',
             success: function(response) {
-             
+             console.log(response+"Delete Response")
             }
          });
     }
@@ -53,7 +53,7 @@ function poplistgen(movielg,classname,datagen,delbtnsta,headcont){
               
         let PopularHtml="";
         for(let i=0;i<movielg;i++){
-            PopularHtml +=`<div class='card p-2 ml-2 my-flex-item'><div class='round'><input type='checkbox' id='${classname + i}' name='${datagen[i].id}' /><label for='${classname + i}' ></label></div><div class='imgcls text-center' id='${datagen[i].id}' ><img class='card-img-top' src='https://image.tmdb.org/t/p/w500/${datagen[i].poster_path}' alt='Card image cap' /><div class='card-text'><span><i class='fa fa-heart'></i></span><span>&nbsp${datagen[i].vote_average * 10}% &nbsp&nbsp</span><span>${datagen[i].title}</span></div></div></div>`;
+            PopularHtml +=`<div class='col-sm-3 col-md-2'><div class='round'><input type='checkbox' id='${classname + i}' name='${datagen[i].id}' /><label for='${classname + i}' ></label></div><div class='imgcls' id='${datagen[i].id}' ><img class='card-img-top' src='https://image.tmdb.org/t/p/w500/${datagen[i].poster_path}' alt='Card image cap' /><div class='card-text'><span><i class='fa fa-heart'></i></span><span>&nbsp${datagen[i].vote_average * 10}% &nbsp&nbsp</span><span>${datagen[i].title}</span></div></div></div>`;
         }
         document.getElementsByClassName(classname)[0].innerHTML = PopularHtml;        
         _var.PopAllTimedata=datagen;
@@ -66,7 +66,6 @@ function poplistgen(movielg,classname,datagen,delbtnsta,headcont){
             $("#AddCollec").css("display","block");           
         }
         $(".modal-title").html(headcont);
-        ImageInfo()
 
 }
 
@@ -88,7 +87,7 @@ function SearchListFun() {
 };
 
 function Addcollection(){
-       
+       console.log("add collection")
         let selected = [];
         $('.popbody input:checked').each(function() {
             selected.push($(this).attr('name'));

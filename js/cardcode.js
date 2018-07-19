@@ -1,131 +1,14 @@
 const _var = require('./variables.js');
-
-function ajaxcall(ApiUrl,Apikey,DataType){
-
-    var data = $.parseJSON($.ajax({
-            url: ApiUrl + "api_key="+ Apikey +"&language=en-US",
-            dataType: 'json', 
-            async: false
-        }).responseText);
-    
-    if(DataType=="Json"){ 
-        return data["results"];
-    }else{
-        return data;
-    }
-     
-}
-
-
-function AjaxPost(URL,data){
-   
-    for(i=0;i<data.length;i++){
-        $.post(_var.BaseServerUrl,
-        data[i],
-        function(data, status){
-            console.log("Data: " + data + "\nStatus: " + status);
-        });
-    }
-    window.location.reload(true);
-
-}
-
-function AjaxDelete(URL,data){
-
-    for(i=0;i<data.length;i++){
-        console.log(data[i].id);
-            $.ajax({
-            url: _var.BaseServerUrl+"/"+data[i].id,
-            type: 'DELETE',
-            success: function(response) {
-             console.log(response+"Delete Response")
-            }
-         });
-    }
-    window.location.reload(true);
-
-}
-
-
-
-
-function poplistgen(movielg,classname,datagen,delbtnsta,headcont){
-              
-        PopularHtml="";
-        for(i=0;i<movielg;i++){
-            PopularHtml +=`<div class='card p-2 ml-2 my-flex-item'><div class='round'><input type='checkbox' id='${classname + i}' name='${datagen[i].id}' /><label for='${classname + i}' ></label></div><div class='imgcls text-center' id='${datagen[i].id}' ><img class='card-img-top' src='https://image.tmdb.org/t/p/w500/${datagen[i].poster_path}' alt='Card image cap' /><div class='card-text'><span><i class='fa fa-heart'></i></span><span>&nbsp${datagen[i].vote_average * 10}% &nbsp&nbsp</span><span>${datagen[i].title}</span></div></div></div>`;
-        }
-        document.getElementsByClassName(classname)[0].innerHTML = PopularHtml;        
-        _var.PopAllTimedata=datagen;
-        if(delbtnsta=="delete"){
-            $("#DelCollec").css("display","block");
-            $("#AddCollec").css("display","none");
-            
-        }else{
-            $("#DelCollec").css("display","none"); 
-            $("#AddCollec").css("display","block");           
-        }
-        $(".modal-title").html(headcont);
-
-}
-
-
-function poplistall(arrdata,delbtnstatus,headcont) {
-
-        $("#DialogOpen").trigger("click")
-        poplistgen(arrdata.length,"popbody",arrdata,delbtnstatus,headcont)
-        
-};
-
-function SearchListFun() {
-
-        let searcval=$("[aria-label='Search']").val()
-        SearchListdata=ajaxcall(_var.Baseurl+"search/movie?query="+searcval+"&page=1&include_adult=false&",_var.Apikey,"Json");
-        $("#DialogOpen").trigger("click")
-        poplistgen(SearchListdata.length,"popbody",SearchListdata,"NOdelete","Search Results")
-
-};
-
-function Addcollection(){
-       
-        let selected = [];
-        $('.popbody input:checked').each(function() {
-            selected.push($(this).attr('name'));
-        });       
-        let filterObj = _var.PopAllTimedata.filter(function(e) {
-                return selected.includes(e.id.toString());
-        });       
-        
-        AjaxPost(_var.BaseServerUrl,filterObj); 
-
-}
-
-function DelCollecList(){
-
-    let selected = [];
-    $('.popbody input:checked').each(function() {
-        selected.push($(this).attr('name'));
-    });   
-    let filterObj = _var.PopAllTimedata.filter(function(e) {
-            return selected.includes(e.id.toString());
-    }); 
-
-    AjaxDelete(_var.BaseServerUrl,filterObj);
-
-}
-
-
-
-
+import {DelCollecList,Addcollection,SearchListFun,poplistall,poplistgen,AjaxDelete,AjaxPost,ajaxcall,ImageInfo} from "./functions.js"
 /* Popular list */
 
     _var.Popularlist=ajaxcall(_var.Baseurl +"movie/popular?",_var.Apikey,"Json");
     poplistgen(5,"cardcust",_var.Popularlist,"NOdelete","");
 
 /* Collection list */
-    CollectionList=ajaxcall(_var.BaseServerUrl+"?",_var.Apikey,"Array")
-    colleng=(CollectionList.length>4)?4:CollectionList.length;
-    poplistgen(CollectionList.length,"collection",CollectionList,"NOdelete","");
+    let CollectionList=ajaxcall(_var.BaseServerUrl+"?",_var.Apikey,"Array")
+    let colleng=(CollectionList.length>4)?5:CollectionList.length;
+    poplistgen(colleng,"collection",CollectionList,"NOdelete","");
 
 /*Button Click Event Listeners */
     document.getElementById("PopListId").addEventListener("click", poplistall.bind(this,_var.Popularlist,"NOdelete","Popular Lists"));    
@@ -140,7 +23,7 @@ function DelCollecList(){
 
         var selector=$(this).attr("id");
         $("#DialogOpen").trigger("click")
-        PopularHtml="";
+        let PopularHtml="";
         let filterObj = _var.Popularlist.filter(function(e) {
             return selector.toString() == e.id.toString();
          }); 
