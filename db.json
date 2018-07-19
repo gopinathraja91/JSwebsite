@@ -21,69 +21,145 @@
       "release_date": "2018-06-06"
     },
     {
-      "vote_count": "6790",
-      "id": "284054",
+      "vote_count": "2185",
+      "id": "447332",
       "video": "false",
-      "vote_average": "7.3",
-      "title": "Black Panther",
-      "popularity": "60.101",
-      "poster_path": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+      "vote_average": "7.2",
+      "title": "A Quiet Place",
+      "popularity": "85.336",
+      "poster_path": "/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
       "original_language": "en",
-      "original_title": "Black Panther",
+      "original_title": "A Quiet Place",
       "genre_ids[]": [
-        "28",
-        "12",
-        "14",
+        "18",
+        "27",
+        "53",
         "878"
       ],
-      "backdrop_path": "/b6ZJZHUdMEFECvGiDpJjlfUWela.jpg",
+      "backdrop_path": "/roYyPiQDQKmIKUEhO912693tSja.jpg",
       "adult": "false",
-      "overview": "King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
-      "release_date": "2018-02-13"
+      "overview": "A family is forced to live in silence while hiding from creatures that hunt by sound.",
+      "release_date": "2018-04-03"
     },
     {
-      "vote_count": "5663",
-      "id": "299536",
+      "vote_count": "3511",
+      "id": "158015",
       "video": "false",
-      "vote_average": "8.4",
-      "title": "Avengers: Infinity War",
-      "popularity": "122.253",
-      "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+      "vote_average": "6.1",
+      "title": "The Purge",
+      "popularity": "69.092",
+      "poster_path": "/tGGJOuLHX7UDlTz57sjfhW1qreP.jpg",
       "original_language": "en",
-      "original_title": "Avengers: Infinity War",
+      "original_title": "The Purge",
       "genre_ids[]": [
-        "12",
         "878",
-        "14",
-        "28"
+        "27",
+        "53"
       ],
-      "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
+      "backdrop_path": "/1sZ9Nnic1ldHhHttAMDmNxaNM04.jpg",
       "adult": "false",
-      "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
-      "release_date": "2018-04-25"
+      "overview": "Given the country's overcrowded prisons, the U.S. government begins to allow 12-hour periods of time in which all illegal activity is legal. During one of these free-for-alls, a family must protect themselves from a home invasion.",
+      "release_date": "2013-05-31"
     },
     {
-      "vote_count": "2139",
-      "id": "338970",
+      "vote_count": "12",
+      "id": "318484",
       "video": "false",
-      "vote_average": "6.2",
-      "title": "Tomb Raider",
-      "popularity": "57.365",
-      "poster_path": "/3zrC5tUiR35rTz9stuIxnU1nUS5.jpg",
+      "vote_average": "5.1",
+      "title": "Qayamat: City Under Threat",
+      "popularity": "67.657",
+      "poster_path": "/e6n3Tf86MJgqtF34bLogGOpkNQf.jpg",
+      "original_language": "hi",
+      "original_title": "Qayamat: City Under Threat",
+      "genre_ids[]": [
+        "28",
+        "18",
+        "80"
+      ],
+      "backdrop_path": "/bsiSNHnzU9brwsP1hVs1AQMt9hl.jpg",
+      "adult": "false",
+      "overview": "CBI Officer Akram Sheikh (Sunil Shetty) is on the verge of nabbing three dreaded Pakistan-backed arms dealers , the brothers Ali (Arbaaz Khan) and Abbas (Sanjay Kapoor) and their common moll Laila (Isha Koppikar) . When Sheikh busts an important arms deal conducted by his three targets , Ali-Abbas join forces with Gopal (Chunky Pandey) , a corrupt scientist to get hold of a deadly virus and take the tourists at the Elphinstone Jail resort as hostage . Akram Sheikh is now compelled to get help from Rachit (Ajay Devgan) , a criminal serving jail time who was a former associate of Ali-Abbas and the only person in history to have successfully escaped the Elphinstone jail . Along with a commando team , they try to pull off a rescue attempt by breaking in the jail and rescuing the hostages .",
+      "release_date": "2003-07-11"
+    },
+    {
+      "vote_count": "548",
+      "id": "363088",
+      "video": "false",
+      "vote_average": "7.1",
+      "title": "Ant-Man and the Wasp",
+      "popularity": "180.247",
+      "poster_path": "/rv1AWImgx386ULjcf62VYaW8zSt.jpg",
       "original_language": "en",
-      "original_title": "Tomb Raider",
+      "original_title": "Ant-Man and the Wasp",
       "genre_ids[]": [
         "28",
         "12",
         "14",
-        "18",
-        "9648",
-        "53"
+        "35",
+        "878"
       ],
-      "backdrop_path": "/jLYhKjSC8LyXzWZc6VwPjMYP2wy.jpg",
+      "backdrop_path": "/6P3c80EOm7BodndGBUAJHHsHKrp.jpg",
       "adult": "false",
-      "overview": "Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she finds herself on the island where her father disappeared.",
-      "release_date": "2018-03-05"
+      "overview": "As Scott Lang awaits expiration of his term of house detention, Hope van Dyne and Dr. Hank Pym involve him in a scheme to rescue Mrs. van Dyne from the micro-universe into which she has fallen, while two groups of schemers converge on them with intentions of stealing Dr. Pym's inventions.",
+      "release_date": "2018-07-04"
+    },
+    {
+      "vote_count": "9",
+      "id": "299534",
+      "video": "false",
+      "vote_average": "0",
+      "title": "Untitled Avengers Movie",
+      "popularity": "11.616",
+      "poster_path": "/guViKKIY0D5UlfQcHnusB8zrJqc.jpg",
+      "original_language": "en",
+      "original_title": "Untitled Avengers Movie",
+      "genre_ids[]": [
+        "28",
+        "12",
+        "878"
+      ],
+      "backdrop_path": "/nTHHdGBwGIxFcA6ygwz3s9oZ5pj.jpg",
+      "adult": "false",
+      "overview": "The turning point of the beloved heroes' epic journey, as they come to truly understand how fragile their reality is and the sacrifices that must be made to uphold it.",
+      "release_date": "2019-04-24"
+    },
+    {
+      "vote_count": "62",
+      "id": "14613",
+      "video": "false",
+      "vote_average": "6.3",
+      "title": "Next Avengers: Heroes of Tomorrow",
+      "popularity": "5.947",
+      "poster_path": "/c4olZWesmYYv5DzlqVLZf7RP7aE.jpg",
+      "original_language": "en",
+      "original_title": "Next Avengers: Heroes of Tomorrow",
+      "genre_ids[]": [
+        "16",
+        "10751"
+      ],
+      "backdrop_path": "/8N91uYwrr1uepEKbmym1tgfXlzS.jpg",
+      "adult": "false",
+      "overview": "The children of the Avengers hone their powers and go head to head with the very enemy responsible for their parents' demise.",
+      "release_date": "2008-09-02"
+    },
+    {
+      "vote_count": "262",
+      "id": "9320",
+      "video": "false",
+      "vote_average": "4.3",
+      "title": "The Avengers",
+      "popularity": "5.862",
+      "poster_path": "/zxjJ2IxhilZLzl8eXjj7S0apZ7k.jpg",
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "genre_ids[]": [
+        "53",
+        "878"
+      ],
+      "backdrop_path": "/8YW4rwWQgC2JRlBcpStMNUko13k.jpg",
+      "adult": "false",
+      "overview": "British Ministry agent John Steed, under direction from \"Mother\", investigates a diabolical plot by arch-villain Sir August de Wynter to rule the world with his weather control machine. Steed investigates the beautiful Doctor Mrs. Emma Peel, the only suspect, but simultaneously falls for her and joins forces with her to combat Sir August.",
+      "release_date": "1998-08-13"
     }
   ]
 }
