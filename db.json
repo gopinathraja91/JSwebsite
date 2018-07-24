@@ -121,6 +121,48 @@
       "adult": "false",
       "overview": "Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Doctor Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.",
       "release_date": "2015-07-14"
+    },
+    {
+      "vote_count": "5820",
+      "id": "299536",
+      "video": "false",
+      "vote_average": "8.4",
+      "title": "Avengers: Infinity War",
+      "popularity": "145.709",
+      "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+      "original_language": "en",
+      "original_title": "Avengers: Infinity War",
+      "genre_ids[]": [
+        "12",
+        "878",
+        "14",
+        "28"
+      ],
+      "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
+      "adult": "false",
+      "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+      "release_date": "2018-04-25"
+    },
+    {
+      "vote_count": "1294",
+      "id": "260513",
+      "video": "false",
+      "vote_average": "7.7",
+      "title": "Incredibles 2",
+      "popularity": "135.342",
+      "poster_path": "/x1txcDXkcM65gl7w20PwYSxAYah.jpg",
+      "original_language": "en",
+      "original_title": "Incredibles 2",
+      "genre_ids[]": [
+        "28",
+        "12",
+        "16",
+        "10751"
+      ],
+      "backdrop_path": "/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg",
+      "adult": "false",
+      "overview": "Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children.",
+      "release_date": "2018-06-14"
     }
   ]
 }
