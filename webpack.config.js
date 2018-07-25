@@ -3,6 +3,7 @@ module.exports = {
     output: {
       filename: 'bundle.js'
     },
+    devtool: 'cheap-eval-source-map',
     module: {
       rules: [{
           test: /\.scss$/,

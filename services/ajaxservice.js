@@ -12,9 +12,7 @@ function ajaxcall(ApiUrl,Apikey,DataType,DataArr,Datastate){
                      dataType: 'json', 
                      async: false
                  }).responseText);
-             console.log(data)
              if(DataType=="Json"){ 
-                 console.log(data["results"])
                  return data["results"];
              }else{
                  return data;
@@ -25,13 +23,14 @@ function ajaxcall(ApiUrl,Apikey,DataType,DataArr,Datastate){
          // post data to local server
          case "SaveData":
              for( let i=0;i<DataArr.length;i++){
+
                  $.post(_var.BaseServerUrl,
                      DataArr[i],
                  function(data, status){
                      console.log("Files added to the database");
                  });
-             }
-             window.location.reload(true);
+
+             }            
              break;
             
  
@@ -39,16 +38,16 @@ function ajaxcall(ApiUrl,Apikey,DataType,DataArr,Datastate){
          // delete data from local server
          case "deleteDate":
              for( let i=0;i<DataArr.length;i++){
-                 console.log(DataArr[i].id);
+
                      $.ajax({
                      url: _var.BaseServerUrl+"/"+DataArr[i].id,
                      type: 'DELETE',
                      success: function(response) {
                      console.log("Files deleted from database")
                      }
+
                  });
-             }
-            window.location.reload(true);
+             }          
  
      }
       
