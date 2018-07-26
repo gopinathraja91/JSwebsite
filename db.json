@@ -63,62 +63,65 @@
       "release_date": "1979-08-04"
     },
     {
-      "vote_count": "5",
-      "id": "59717",
+      "vote_count": "5862",
+      "id": "299536",
       "video": "false",
-      "vote_average": "4.9",
-      "title": "Adieu Galaxy Express 999",
-      "popularity": "2.424",
-      "poster_path": "/rLxL3JWNMBTpUS2xCUwmgSaBnAs.jpg",
-      "original_language": "ja",
-      "original_title": "さよなら銀河鉄道999-アンドロメダ終着駅-",
-      "genre_ids[]": [
-        "16",
-        "878"
-      ],
-      "backdrop_path": "/vDz9UE2LOrcqkrdj5apVKzouVtn.jpg",
-      "adult": "false",
-      "overview": "Two years after the events of Galaxy Express 999, Earth has become a battlefield, and Tetsuro is summoned to board the Three-Nine once more. In this, the shattering, full-length theatrical conclusion to Leiji Matsumoto's epic story, all questions will be answered and all mysteries will be revealed as Tetsuro embarks on a journey which will reveal a secret so awful, even Maetel herself can hardly bear to speak of it.",
-      "release_date": "1981-08-01"
-    },
-    {
-      "vote_count": "51",
-      "id": "64353",
-      "video": "false",
-      "vote_average": "7.3",
-      "title": "The Hitch Hikers Guide to the Galaxy",
-      "popularity": "2.132",
-      "poster_path": "/9DtyE0sNkeStBBp4uZWUysq8GHm.jpg",
+      "vote_average": "8.4",
+      "title": "Avengers: Infinity War",
+      "popularity": "142.397",
+      "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
       "original_language": "en",
-      "original_title": "The Hitch Hikers Guide to the Galaxy",
+      "original_title": "Avengers: Infinity War",
       "genre_ids[]": [
         "12",
-        "35",
-        "878"
+        "878",
+        "14",
+        "28"
       ],
-      "backdrop_path": "/t5toZyQUjl5qeoRVjIXzgzd5Dl8.jpg",
+      "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
       "adult": "false",
-      "overview": "An Earth Man and his alien friend escape an exploding Earth, and set forth on an odd adventure across the universe with a known fugitive. Based on the book by Douglas Adams, the dialog follows the book closely. This was originally a 6-part series from the BBC",
-      "release_date": "1981-02-09"
+      "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+      "release_date": "2018-04-25"
     },
     {
-      "vote_count": "4",
-      "id": "43021",
+      "vote_count": "7444",
+      "id": "284053",
       "video": "false",
-      "vote_average": "2.4",
-      "title": "Sex Galaxy",
-      "popularity": "0.711",
-      "poster_path": "/grAAQGS9P4QWjN2XiQtH1R3xkSn.jpg",
+      "vote_average": "7.5",
+      "title": "Thor: Ragnarok",
+      "popularity": "124.739",
+      "poster_path": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
       "original_language": "en",
-      "original_title": "Sex Galaxy",
+      "original_title": "Thor: Ragnarok",
       "genre_ids[]": [
-        "35",
-        "878"
+        "28",
+        "12"
       ],
-      "backdrop_path": "/m0sMrKducNCq7tC8E0ncVMKSM8Y.jpg",
+      "backdrop_path": "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg",
       "adult": "false",
-      "overview": "One hundred years in the future... Due to overpopulation and the effects of global warming, sex has been declared illegal on Earth. When a crew of astronauts hear of a distant planet inhabited by insatiable female creatures who exist only to satisfy man’s desires, they decide to take a detour from their routine mission in search of the mythical star system known as the Sex Galaxy. But like all expeditions fueled solely by lust and carnality, risk lurks around every corner, danger and regret at every turn.",
-      "release_date": "2008-08-22"
+      "overview": "Thor is on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.",
+      "release_date": "2017-10-25"
+    },
+    {
+      "vote_count": "2170",
+      "id": "159824",
+      "video": "false",
+      "vote_average": "6.7",
+      "title": "Hotel Transylvania 2",
+      "popularity": "97.918",
+      "poster_path": "/t4PLWexbe4wbNydCOBv18cYexup.jpg",
+      "original_language": "en",
+      "original_title": "Hotel Transylvania 2",
+      "genre_ids[]": [
+        "16",
+        "35",
+        "10751",
+        "14"
+      ],
+      "backdrop_path": "/h3t4zZPteUPqyDBrmz5Z2zzGM61.jpg",
+      "adult": "false",
+      "overview": "When the old-old-old-fashioned vampire Vlad arrives at the hotel for an impromptu family get-together, Hotel Transylvania is in for a collision of supernatural old-school and modern day cool.",
+      "release_date": "2015-09-21"
     }
   ]
 }
