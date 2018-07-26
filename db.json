@@ -84,23 +84,25 @@
       "release_date": "2018-04-25"
     },
     {
-      "vote_count": "7444",
-      "id": "284053",
+      "vote_count": "1346",
+      "id": "260513",
       "video": "false",
-      "vote_average": "7.5",
-      "title": "Thor: Ragnarok",
-      "popularity": "124.739",
-      "poster_path": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+      "vote_average": "7.7",
+      "title": "Incredibles 2",
+      "popularity": "104.022",
+      "poster_path": "/x1txcDXkcM65gl7w20PwYSxAYah.jpg",
       "original_language": "en",
-      "original_title": "Thor: Ragnarok",
+      "original_title": "Incredibles 2",
       "genre_ids[]": [
         "28",
-        "12"
+        "12",
+        "16",
+        "10751"
       ],
-      "backdrop_path": "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg",
+      "backdrop_path": "/mabuNsGJgRuCTuGqjFkWe1xdu19.jpg",
       "adult": "false",
-      "overview": "Thor is on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.",
-      "release_date": "2017-10-25"
+      "overview": "Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children.",
+      "release_date": "2018-06-14"
     },
     {
       "vote_count": "2170",
@@ -122,6 +124,46 @@
       "adult": "false",
       "overview": "When the old-old-old-fashioned vampire Vlad arrives at the hotel for an impromptu family get-together, Hotel Transylvania is in for a collision of supernatural old-school and modern day cool.",
       "release_date": "2015-09-21"
+    },
+    {
+      "vote_count": "4954",
+      "id": "56292",
+      "video": "false",
+      "vote_average": "6.9",
+      "title": "Mission: Impossible - Ghost Protocol",
+      "popularity": "79.832",
+      "poster_path": "/s58mMsgIVOFfoXPtwPWJ3hDYpXf.jpg",
+      "original_language": "en",
+      "original_title": "Mission: Impossible - Ghost Protocol",
+      "genre_ids[]": [
+        "28",
+        "53",
+        "12"
+      ],
+      "backdrop_path": "/pc7a2qrIkIxzqWGqcexd3mHzIxy.jpg",
+      "adult": "false",
+      "overview": "Ethan Hunt and his team are racing against time to track down a dangerous terrorist named Hendricks, who has gained access to Russian nuclear launch codes and is planning a strike on the United States. An attempt to stop him ends in an explosion causing severe destruction to the Kremlin and the IMF to be implicated in the bombing, forcing the President to disavow them. No longer being aided by the government, Ethan and his team chase Hendricks around the globe, although they might still be too late to stop a disaster.",
+      "release_date": "2011-12-07"
+    },
+    {
+      "vote_count": "14",
+      "id": "318484",
+      "video": "false",
+      "vote_average": "5.4",
+      "title": "Qayamat: City Under Threat",
+      "popularity": "77.766",
+      "poster_path": "/e6n3Tf86MJgqtF34bLogGOpkNQf.jpg",
+      "original_language": "hi",
+      "original_title": "Qayamat: City Under Threat",
+      "genre_ids[]": [
+        "28",
+        "18",
+        "80"
+      ],
+      "backdrop_path": "/bsiSNHnzU9brwsP1hVs1AQMt9hl.jpg",
+      "adult": "false",
+      "overview": "CBI Officer Akram Sheikh (Sunil Shetty) is on the verge of nabbing three dreaded Pakistan-backed arms dealers , the brothers Ali (Arbaaz Khan) and Abbas (Sanjay Kapoor) and their common moll Laila (Isha Koppikar) . When Sheikh busts an important arms deal conducted by his three targets , Ali-Abbas join forces with Gopal (Chunky Pandey) , a corrupt scientist to get hold of a deadly virus and take the tourists at the Elphinstone Jail resort as hostage . Akram Sheikh is now compelled to get help from Rachit (Ajay Devgan) , a criminal serving jail time who was a former associate of Ali-Abbas and the only person in history to have successfully escaped the Elphinstone jail . Along with a commando team , they try to pull off a rescue attempt by breaking in the jail and rescuing the hostages .",
+      "release_date": "2003-07-11"
     }
   ]
 }

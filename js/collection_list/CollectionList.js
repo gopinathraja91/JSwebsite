@@ -1,38 +1,30 @@
-const _var = require('../js/variables.js');
-import { ajaxcall } from "../services/ajaxservice.js";
-import { store} from "../ReduxStore/redxstore"
+import { ajaxcall } from '../services/ajaxservice.js';
+import { store } from '../ReduxStore/redxstore';
 
-function Addcollection(){
+const _var = require('../variables.js');
 
-     let statedata=store.getState();
-     let selected = [];
-     $('.popbody input:checked').each(function() {
-         selected.push($(this).attr('name'));
-     });       
-     let filterObj = statedata.PopupData.filter(function(e) {
-             return selected.includes(e.id.toString());
-     });     
+function Addcollection() {
+  const statedata = store.getState();
+  const selected = [];
+  $('.popbody input:checked').each(function () {
+    selected.push($(this).attr('name'));
+  });
+  const filterObj = statedata.PopupData.filter(e => selected.includes(e.id.toString()));
 
-     ajaxcall(_var.BaseServerUrl,_var.Apikey,"DataType",filterObj,"SaveData");
-     store.dispatch({type: "Update CollecList",collecList:filterObj});
-
+  ajaxcall(_var.BaseServerUrl, _var.Apikey, 'DataType', filterObj, 'SaveData');
+  store.dispatch({ type: 'Update CollecList', collecList: filterObj });
 }
 
-function DelCollecList(){
-
- let selected = [];
- let statedata=store.getState();
- $('.popbody input:checked').each(function() {
-     selected.push($(this).attr('name'));
- });   
- let filterObj = statedata.PopupData.filter(function(e) {
-         return selected.includes(e.id.toString());
- });
- ajaxcall(_var.BaseServerUrl,_var.Apikey,"DataType",filterObj,"deleteDate") 
- store.dispatch({type: "Delete CollecList",collecList:selected});
-
+function DelCollecList() {
+  const selected = [];
+  const statedata = store.getState();
+  $('.popbody input:checked').each(function () {
+    selected.push($(this).attr('name'));
+  });
+  const filterObj = statedata.PopupData.filter(e => selected.includes(e.id.toString()));
+  ajaxcall(_var.BaseServerUrl, _var.Apikey, 'DataType', filterObj, 'deleteDate');
+  store.dispatch({ type: 'Delete CollecList', collecList: selected });
 }
 
 
-
-export { Addcollection,DelCollecList }
+export { Addcollection, DelCollecList };

@@ -1,4 +1,4 @@
-const _var = require('../js/variables.js');
+const _var = require('../variables.js');
 import { ajaxcall } from "../services/ajaxservice.js";
 import { poplistall } from "../popupdata/popupcont.js";
 import { Addcollection,DelCollecList } from "../collection_list/CollectionList.js";
@@ -38,7 +38,7 @@ function PopularList_Render(){
 
 /* Collection list */
 function CollectionList_Render(){
-    let CollectionList=ajaxcall(_var.BaseServerUrl+"?",_var.Apikey,"Array","","GetDate"); 
+        let CollectionList=ajaxcall(_var.BaseServerUrl+"?",_var.Apikey,"Array","","GetDate"); 
         store.dispatch({type: "Create CollecList",collecList:CollectionList});
 }
 
