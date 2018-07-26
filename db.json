@@ -21,126 +21,104 @@
       "release_date": "2018-06-06"
     },
     {
-      "vote_count": "3097",
-      "id": "333339",
-      "video": "false",
-      "vote_average": "7.7",
-      "title": "Ready Player One",
-      "popularity": "112.27",
-      "poster_path": "/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
-      "original_language": "en",
-      "original_title": "Ready Player One",
-      "genre_ids[]": [
-        "12",
-        "878",
-        "14"
-      ],
-      "backdrop_path": "/q7fXcrDPJcf6t3rzutaNwTzuKP1.jpg",
-      "adult": "false",
-      "overview": "When the creator of a popular video game system dies, a virtual contest is created to compete for his fortune.",
-      "release_date": "2018-03-28"
-    },
-    {
-      "vote_count": "1373",
-      "id": "427641",
-      "video": "false",
-      "vote_average": "6.1",
-      "title": "Rampage",
-      "popularity": "85.837",
-      "poster_path": "/3gIO6mCd4Q4PF1tuwcyI3sjFrtI.jpg",
-      "original_language": "en",
-      "original_title": "Rampage",
-      "genre_ids[]": [
-        "28",
-        "12",
-        "878",
-        "14"
-      ],
-      "backdrop_path": "/wrqUiMXttHE4UBFMhLHlN601MZh.jpg",
-      "adult": "false",
-      "overview": "Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth.  But a rogue genetic experiment gone awry mutates this gentle ape into a raging creature of enormous size.  To make matters worse, it’s soon discovered there are other similarly altered animals.  As these newly created alpha predators tear across North America, destroying everything in their path, Okoye teams with a discredited genetic engineer to secure an antidote, fighting his way through an ever-changing battlefield, not only to halt a global catastrophe but to save the fearsome creature that was once his friend.",
-      "release_date": "2018-04-12"
-    },
-    {
-      "vote_count": "13",
-      "id": "318484",
-      "video": "false",
-      "vote_average": "5.5",
-      "title": "Qayamat: City Under Threat",
-      "popularity": "79.273",
-      "poster_path": "/e6n3Tf86MJgqtF34bLogGOpkNQf.jpg",
-      "original_language": "hi",
-      "original_title": "Qayamat: City Under Threat",
-      "genre_ids[]": [
-        "28",
-        "18",
-        "80"
-      ],
-      "backdrop_path": "/bsiSNHnzU9brwsP1hVs1AQMt9hl.jpg",
-      "adult": "false",
-      "overview": "CBI Officer Akram Sheikh (Sunil Shetty) is on the verge of nabbing three dreaded Pakistan-backed arms dealers , the brothers Ali (Arbaaz Khan) and Abbas (Sanjay Kapoor) and their common moll Laila (Isha Koppikar) . When Sheikh busts an important arms deal conducted by his three targets , Ali-Abbas join forces with Gopal (Chunky Pandey) , a corrupt scientist to get hold of a deadly virus and take the tourists at the Elphinstone Jail resort as hostage . Akram Sheikh is now compelled to get help from Rachit (Ajay Devgan) , a criminal serving jail time who was a former associate of Ali-Abbas and the only person in history to have successfully escaped the Elphinstone jail . Along with a commando team , they try to pull off a rescue attempt by breaking in the jail and rescuing the hostages .",
-      "release_date": "2003-07-11"
-    },
-    {
-      "vote_count": "8597",
-      "id": "102899",
+      "vote_count": "805",
+      "id": "363088",
       "video": "false",
       "vote_average": "7",
-      "title": "Ant-Man",
-      "popularity": "78.072",
-      "poster_path": "/D6e8RJf2qUstnfkTslTXNTUAlT.jpg",
+      "title": "Ant-Man and the Wasp",
+      "popularity": "154.869",
+      "poster_path": "/rv1AWImgx386ULjcf62VYaW8zSt.jpg",
       "original_language": "en",
-      "original_title": "Ant-Man",
+      "original_title": "Ant-Man and the Wasp",
       "genre_ids[]": [
-        "878",
         "28",
-        "12"
-      ],
-      "backdrop_path": "/kvXLZqY0Ngl1XSw7EaMQO0C1CCj.jpg",
-      "adult": "false",
-      "overview": "Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Doctor Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.",
-      "release_date": "2015-07-14"
-    },
-    {
-      "vote_count": "2319",
-      "id": "447332",
-      "video": "false",
-      "vote_average": "7.2",
-      "title": "A Quiet Place",
-      "popularity": "77.864",
-      "poster_path": "/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
-      "original_language": "en",
-      "original_title": "A Quiet Place",
-      "genre_ids[]": [
-        "18",
-        "27",
-        "53",
+        "12",
+        "14",
+        "35",
         "878"
       ],
-      "backdrop_path": "/roYyPiQDQKmIKUEhO912693tSja.jpg",
+      "backdrop_path": "/6P3c80EOm7BodndGBUAJHHsHKrp.jpg",
       "adult": "false",
-      "overview": "A family is forced to live in silence while hiding from creatures that hunt by sound.",
-      "release_date": "2018-04-03"
+      "overview": "As Scott Lang awaits expiration of his term of house detention, Hope van Dyne and Dr. Hank Pym involve him in a scheme to rescue Mrs. van Dyne from the micro-universe into which she has fallen, while two groups of schemers converge on them with intentions of stealing Dr. Pym's inventions.",
+      "release_date": "2018-07-04"
     },
     {
-      "vote_count": "187",
-      "id": "447200",
+      "vote_count": "16",
+      "id": "15227",
       "video": "false",
-      "vote_average": "6.1",
-      "title": "Skyscraper",
-      "popularity": "76.73",
-      "poster_path": "/5LYSsOPzuP13201qSzMjNxi8FxN.jpg",
-      "original_language": "en",
-      "original_title": "Skyscraper",
+      "vote_average": "5.9",
+      "title": "Galaxy Express 999",
+      "popularity": "2.785",
+      "poster_path": "/TDSbp7OoIQ15eZGzLiJrssIvqI.jpg",
+      "original_language": "ja",
+      "original_title": "銀河鉄道999",
       "genre_ids[]": [
-        "28",
-        "53",
-        "18"
+        "12",
+        "16",
+        "878"
       ],
-      "backdrop_path": "/oMKFQmoVgB69fyXfSMu0lGlHJP2.jpg",
+      "backdrop_path": "/eBkCE2TUe6pnCwtSe3YLKs905E3.jpg",
       "adult": "false",
-      "overview": "Framed and on the run, a former FBI agent must save his family from a blazing fire in the world's tallest building.",
-      "release_date": "2018-07-11"
+      "overview": "In the future, one can achieve immortality by obtaining a mechanized body. Orphaned, young Tetsuro hitches a ride on the space train Galaxy Express 999 in the hope of obtaining a cyborg body to avenge his mother's death. Along the way, he meets Matael, who is the spitting image of his dead mother.",
+      "release_date": "1979-08-04"
+    },
+    {
+      "vote_count": "5",
+      "id": "59717",
+      "video": "false",
+      "vote_average": "4.9",
+      "title": "Adieu Galaxy Express 999",
+      "popularity": "2.424",
+      "poster_path": "/rLxL3JWNMBTpUS2xCUwmgSaBnAs.jpg",
+      "original_language": "ja",
+      "original_title": "さよなら銀河鉄道999-アンドロメダ終着駅-",
+      "genre_ids[]": [
+        "16",
+        "878"
+      ],
+      "backdrop_path": "/vDz9UE2LOrcqkrdj5apVKzouVtn.jpg",
+      "adult": "false",
+      "overview": "Two years after the events of Galaxy Express 999, Earth has become a battlefield, and Tetsuro is summoned to board the Three-Nine once more. In this, the shattering, full-length theatrical conclusion to Leiji Matsumoto's epic story, all questions will be answered and all mysteries will be revealed as Tetsuro embarks on a journey which will reveal a secret so awful, even Maetel herself can hardly bear to speak of it.",
+      "release_date": "1981-08-01"
+    },
+    {
+      "vote_count": "51",
+      "id": "64353",
+      "video": "false",
+      "vote_average": "7.3",
+      "title": "The Hitch Hikers Guide to the Galaxy",
+      "popularity": "2.132",
+      "poster_path": "/9DtyE0sNkeStBBp4uZWUysq8GHm.jpg",
+      "original_language": "en",
+      "original_title": "The Hitch Hikers Guide to the Galaxy",
+      "genre_ids[]": [
+        "12",
+        "35",
+        "878"
+      ],
+      "backdrop_path": "/t5toZyQUjl5qeoRVjIXzgzd5Dl8.jpg",
+      "adult": "false",
+      "overview": "An Earth Man and his alien friend escape an exploding Earth, and set forth on an odd adventure across the universe with a known fugitive. Based on the book by Douglas Adams, the dialog follows the book closely. This was originally a 6-part series from the BBC",
+      "release_date": "1981-02-09"
+    },
+    {
+      "vote_count": "4",
+      "id": "43021",
+      "video": "false",
+      "vote_average": "2.4",
+      "title": "Sex Galaxy",
+      "popularity": "0.711",
+      "poster_path": "/grAAQGS9P4QWjN2XiQtH1R3xkSn.jpg",
+      "original_language": "en",
+      "original_title": "Sex Galaxy",
+      "genre_ids[]": [
+        "35",
+        "878"
+      ],
+      "backdrop_path": "/m0sMrKducNCq7tC8E0ncVMKSM8Y.jpg",
+      "adult": "false",
+      "overview": "One hundred years in the future... Due to overpopulation and the effects of global warming, sex has been declared illegal on Earth. When a crew of astronauts hear of a distant planet inhabited by insatiable female creatures who exist only to satisfy man’s desires, they decide to take a detour from their routine mission in search of the mythical star system known as the Sex Galaxy. But like all expeditions fueled solely by lust and carnality, risk lurks around every corner, danger and regret at every turn.",
+      "release_date": "2008-08-22"
     }
   ]
 }

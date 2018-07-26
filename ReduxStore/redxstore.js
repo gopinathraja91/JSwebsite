@@ -1,5 +1,5 @@
 import {createStore} from 'redux';
-import { PopularList_Render,CollectionList_Render } from "../render/renderpage.js"
+import { PopularList_Render,CollectionList_Render,poplistgen } from "../render/renderpage.js"
 
 // Reducer
 function CreateComponent(CurrentState, action) {
@@ -8,18 +8,22 @@ function CreateComponent(CurrentState, action) {
             case "Create PopularList":
                 const s = [...NewState.popularList, ...action.popularList]
                 NewState.popularList=s;
+                NewState.status="CreatePopularList";
                 return NewState;
                 break;
             case "Create CollecList":
                 NewState.collecList=action.collecList;
+                NewState.status="CreateCollecList";
                 return NewState;
                 break;
             case "Search Component":
                 NewState.SearchList=action.SearchList;
+                NewState.status="CreateSearchList";
                 return NewState;
                 break;
             case "Update Popupdata":
                 NewState.PopupData=action.PopupData;
+                NewState.status="UpdatePopupdata";
                 return NewState;
                 break;
             case "Update CollecList":
@@ -29,11 +33,12 @@ function CreateComponent(CurrentState, action) {
                 return NewState;
                 break;
             case "Delete CollecList":
-                let filteredPeople = NewState.collecList.filter(function(e) {
-                        if(action.collecList.includes(e.id.toString())){}else{return true;};
+
+                 let filteredarray = NewState.collecList.filter(function(e) {
+                         if(action.collecList.includes(e.id.toString())){return false;}else{return true;};
                   });
-                  NewState.collecList=filteredPeople;
-                  NewState.collecList="CollecDelete";
+                  NewState.collecList=filteredarray;
+                  NewState.status="CollecDelete";
                 return NewState;
                 break;
             default:   
@@ -48,16 +53,40 @@ const store = createStore(CreateComponent, {
     collecList:[],popularList:[],SearchList:[],PopupData:[],status:"initial load"
   });
 
-   
+//Subscriber Function 
 function render(){
-   let Storedata=store.getState();
-  
-   if(Storedata.status == "CollecUpdate"){
-        Storedata.status = "Updated";
-        CollectionList_Render();
-   }else if(Storedata.status == "CollecDelete"){
-        Storedata.status = "Updated";
-        CollectionList_Render();
+    let Storedata=store.getState();
+   switch(Storedata.status){
+       case "CreatePopularList":
+            Storedata.status="done";
+            poplistgen(5,"cardcust",Storedata.popularList,"NOdelete","");
+            break;
+       case "CreateCollecList":
+            Storedata.status="done";
+            let colleng=(Storedata.collecList.length>4)?5:Storedata.collecList.length;
+            poplistgen(colleng,"collection",Storedata.collecList,"NOdelete","");        
+            break;
+       case "CreateSearchList":
+            Storedata.status="done";
+            poplistgen(Storedata.SearchList.length,"popbody",Storedata.SearchList,"NOdelete","Search Results");
+            break;
+       case "CreatePopupdata":
+            Storedata.status="done";
+            break;
+       case "CollecUpdate":
+            Storedata.status="done" 
+            let collengone=(Storedata.collecList.length>4)?5:Storedata.collecList.length;
+            poplistgen(collengone,"collection",Storedata.collecList,"NOdelete","");           
+            break;
+       case "CollecDelete":
+            Storedata.status="done";
+            console.log(Storedata.collecList);
+            let collengtwo=(Storedata.collecList.length>4)?5:Storedata.collecList.length;
+            poplistgen(collengtwo,"collection",Storedata.collecList,"NOdelete","");           
+            break;
+       default:
+       Storedata.status="done" 
+
    }
 }  
 

@@ -4,10 +4,8 @@ import { poplistall } from "../popupdata/popupcont.js";
 import { Addcollection,DelCollecList } from "../collection_list/CollectionList.js";
 import { store} from "../ReduxStore/redxstore";
 
-function poplistgen(movielg,classname,datagenold,delbtnsta,headcont){
-    let statedata=store.getState();
-    debugger;
-    let datagen=statedata.popularList;
+function poplistgen(movielg,classname,datagen,delbtnsta,headcont){
+
     let PopularHtml="";
     for(let i=0;i<movielg;i++){
         PopularHtml +=`<div class='col-sm-3 col-md-2'><div class='round'><input type='checkbox' id='${classname + i}' name='${datagen[i].id}' /><label for='${classname + i}' ></label></div><div class='imgcls' id='${datagen[i].id}' ><img class='card-img-top' src='https://image.tmdb.org/t/p/w500/${datagen[i].poster_path}' alt='Card image cap' /><div class='card-text'><span><i class='fa fa-heart'></i></span><span>&nbsp${datagen[i].vote_average * 10}% &nbsp&nbsp</span><span>${datagen[i].title}</span></div></div></div>`;
@@ -23,7 +21,7 @@ function poplistgen(movielg,classname,datagenold,delbtnsta,headcont){
         $("#DelCollec").css("display","none"); 
         $("#AddCollec").css("display","block");           
     }
-    $(".modal-title").html(headcont);
+    $(".modal-title").html(headcont);   
 
 }
 
@@ -35,16 +33,13 @@ function PopularList_Render(){
 
     let Popularfetchdata=ajaxcall(_var.Baseurl +"movie/popular?",_var.Apikey,"Json","","GetDate");
     store.dispatch({type: "Create PopularList",popularList:Popularfetchdata});
-    poplistgen(5,"cardcust",Popularfetchdata,"NOdelete","");
+    
 }
 
 /* Collection list */
 function CollectionList_Render(){
-    let CollectionList=ajaxcall(_var.BaseServerUrl+"?",_var.Apikey,"Array","","GetDate");
-    let colleng=(CollectionList.length>4)?5:CollectionList.length;
-    poplistgen(colleng,"collection",CollectionList,"NOdelete","");    
-
-    store.dispatch({type: "Create CollecList",collecList:CollectionList});
+    let CollectionList=ajaxcall(_var.BaseServerUrl+"?",_var.Apikey,"Array","","GetDate"); 
+        store.dispatch({type: "Create CollecList",collecList:CollectionList});
 }
 
 function SearchListFun() {
@@ -53,20 +48,17 @@ function SearchListFun() {
     let SearchListdata=ajaxcall(`${_var.Baseurl}search/movie?query=${searcval}&page=1&include_adult=false&`,_var.Apikey,"Json","","GetDate");
     store.dispatch({type: "Search Component",SearchList:SearchListdata});
      $("#DialogOpen").trigger("click");
-    poplistgen(SearchListdata.length,"popbody",SearchListdata,"NOdelete","Search Results");
+    
 
 };
 
 /*Button Click Event Listeners */
 function Button_events(){
 
-    let statedata=store.getState();
-    console.log("button")
-    console.log(statedata);
-    document.getElementById("PopListId").addEventListener("click", poplistall.bind(this,statedata.popularList,"NOdelete","Popular Lists"));    
+    document.getElementById("PopListId").addEventListener("click", poplistall.bind(this,"NOdelete","Popular Lists"));    
     document.getElementById("searchbtn").addEventListener("click", SearchListFun);
     document.getElementById("AddCollec").addEventListener("click", Addcollection);
-    document.getElementById("ViewCollec").addEventListener("click", poplistall.bind(this,statedata.collecList,"delete","Collection Lists"));
+    document.getElementById("ViewCollec").addEventListener("click", poplistall.bind(this,"delete","Collection Lists"));
     document.getElementById("DelCollec").addEventListener("click", DelCollecList);
 }
 

@@ -14,7 +14,6 @@ function Addcollection(){
      });     
 
      ajaxcall(_var.BaseServerUrl,_var.Apikey,"DataType",filterObj,"SaveData");
-     console.log("function add call ")  
      store.dispatch({type: "Update CollecList",collecList:filterObj});
 
 }
@@ -28,10 +27,9 @@ function DelCollecList(){
  });   
  let filterObj = statedata.PopupData.filter(function(e) {
          return selected.includes(e.id.toString());
- }); 
- //console.log(statedata)
+ });
  ajaxcall(_var.BaseServerUrl,_var.Apikey,"DataType",filterObj,"deleteDate") 
- store.dispatch({type: "Delete CollecList",collecList:filterObj});
+ store.dispatch({type: "Delete CollecList",collecList:selected});
 
 }
 
