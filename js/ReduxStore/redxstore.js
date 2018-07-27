@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import { PopularList_Render, CollectionList_Render, poplistgen } from '../render/renderpage.js';
+import { poplistgen } from '../render/renderpage';
 
 // Reducer
 function CreateComponent(CurrentState, action) {
@@ -10,37 +10,30 @@ function CreateComponent(CurrentState, action) {
       NewState.popularList = s;
       NewState.status = 'CreatePopularList';
       return NewState;
-      break;
     case 'Create CollecList':
       NewState.collecList = action.collecList;
       NewState.status = 'CreateCollecList';
       return NewState;
-      break;
     case 'Search Component':
       NewState.SearchList = action.SearchList;
       NewState.status = 'CreateSearchList';
       return NewState;
-      break;
     case 'Update Popupdata':
       NewState.PopupData = action.PopupData;
       NewState.status = 'UpdatePopupdata';
       return NewState;
-      break;
     case 'Update CollecList':
-      var mergedata = NewState.collecList.concat(action.collecList);
+      const mergedata = NewState.collecList.concat(action.collecList);
       NewState.collecList = mergedata;
       NewState.status = 'CollecUpdate';
       return NewState;
-      break;
     case 'Delete CollecList':
-
       const filteredarray = NewState.collecList.filter((e) => {
         if (action.collecList.includes(e.id.toString())) { return false; } return true;
       });
       NewState.collecList = filteredarray;
       NewState.status = 'CollecDelete';
       return NewState;
-      break;
     default:
       return CurrentState;
   }
@@ -92,4 +85,4 @@ function render() {
 store.subscribe(render);
 
 
-export { store };
+export default store;

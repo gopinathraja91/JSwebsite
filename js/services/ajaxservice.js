@@ -1,15 +1,16 @@
-const _var = require('../variables.js');
+const $ = require('jquery');
+const localVar = require('../variables.js');
 
 function ajaxcall(ApiUrl, Apikey, DataType, DataArr, Datastate) {
   switch (Datastate) {
     case 'GetDate':
 
-      var data = $.parseJSON($.ajax({
+      const data = $.parseJSON($.ajax({
         url: `${ApiUrl}api_key=${Apikey}&language=en-US`,
         dataType: 'json',
         async: false,
       }).responseText);
-      if (DataType == 'Json') {
+      if (DataType === 'Json') {
         return data.results;
       }
       return data;
@@ -20,10 +21,10 @@ function ajaxcall(ApiUrl, Apikey, DataType, DataArr, Datastate) {
       // post data to local server
     case 'SaveData':
       for (let i = 0; i < DataArr.length; i++) {
-        $.post(_var.BaseServerUrl,
+        $.post(localVar.BaseServerUrl,
           DataArr[i],
-          (data, status) => {
-            console.log('Files added to the database');
+          (data1, status) => {
+            console.log(data1 + status);
           });
       }
       break;
@@ -33,16 +34,19 @@ function ajaxcall(ApiUrl, Apikey, DataType, DataArr, Datastate) {
     case 'deleteDate':
       for (let i = 0; i < DataArr.length; i++) {
         $.ajax({
-          url: `${_var.BaseServerUrl}/${DataArr[i].id}`,
+          url: `${localVar.BaseServerUrl}/${DataArr[i].id}`,
           type: 'DELETE',
           success(response) {
-            console.log('Files deleted from database');
+            console.log(response);
           },
 
         });
       }
+      break;
+    default:
   }
+  return true;
 }
 
 
-export { ajaxcall };
+export default ajaxcall;

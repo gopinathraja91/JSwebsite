@@ -1,7 +1,8 @@
-import { ajaxcall } from '../services/ajaxservice.js';
-import { store } from '../ReduxStore/redxstore';
+import ajaxcall from '../services/ajaxservice';
+import store from '../ReduxStore/redxstore';
 
-const _var = require('../variables.js');
+const $ = require('jquery');
+const localVar = require('../variables.js');
 
 function Addcollection() {
   const statedata = store.getState();
@@ -11,7 +12,7 @@ function Addcollection() {
   });
   const filterObj = statedata.PopupData.filter(e => selected.includes(e.id.toString()));
 
-  ajaxcall(_var.BaseServerUrl, _var.Apikey, 'DataType', filterObj, 'SaveData');
+  ajaxcall(localVar.BaseServerUrl, localVar.Apikey, 'DataType', filterObj, 'SaveData');
   store.dispatch({ type: 'Update CollecList', collecList: filterObj });
 }
 
@@ -22,7 +23,7 @@ function DelCollecList() {
     selected.push($(this).attr('name'));
   });
   const filterObj = statedata.PopupData.filter(e => selected.includes(e.id.toString()));
-  ajaxcall(_var.BaseServerUrl, _var.Apikey, 'DataType', filterObj, 'deleteDate');
+  ajaxcall(localVar.BaseServerUrl, localVar.Apikey, 'DataType', filterObj, 'deleteDate');
   store.dispatch({ type: 'Delete CollecList', collecList: selected });
 }
 
